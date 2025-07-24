@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+    width: 100%;   
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-color:#000000;
+}
+.nav{
+    height: 9vh;
+    width: 100%;
+    /* background-color: rgb(143, 140, 140); */
+    display: flex;
+    justify-content: space-between;   
+}
+.nav h1{
+    font-size: 4vw;
+    font-family: futura;
+    margin: 1.4vw 4vw;
+    color:#fff;
+    cursor: pointer;
+}
+.linksm{
+    margin-top: 2vw;
+    margin-left: 2vw;
+}
+.linksm a{
+    text-decoration: none;
+    font-size: 1.5vw;
+    margin: 1vw;
+    color: #fff;
+    font-family: poppins;
+}
+.buttonsl{
+    margin:2vw 2vw;
+}
+.buttonsl button{
+    font-size: 1.2vw;
+    padding: 0.6vw 1vw;
+    border: none;
+    margin-right: 1.2vw;    
+    border-radius: 0.5vw;
+    font-family: poppins;
+    font-weight: 900;
+    cursor: pointer;
+}
+.buttonsl .button1{
+    background-color: #333333;
+    color: #fff;
+}
+.buttonsl .button2{
+    background-color: #dbdbdb;
+}
+.herotext{
+    background: #000000;
+    font-family: 'Arial Black', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+.container {
+    position: relative;
+    font-size: 18vw;
+    color: #bcbaba;
+    font-weight: 900;
+    font-family: "Oswald";
+}
+.badge {
+    position: absolute;
+    background-color: #1f1e1e;
+    color: rgb(255, 119, 0);
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 0.3vw 1.3vw;
+    transform: rotate(-5deg);
+    border-radius:0.5vw;
+    font-family: "Oswald";
+}
+.developer {
+    bottom: 2vw;
+    left: 15vw;
+    transform: rotate(9deg);
+}
+.yug {
+    top: 3vw;
+    right: 10vw;
+    transform: rotate(-7deg);
+}
+.underline{
+    height: 12vh;
+    width: 85%;
+    /* background-color: #fff; */
+    border-bottom: 1px solid rgb(212, 211, 211);
+    margin-left: 7.5vw;
+}
+.heropara{
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    padding: 15vw 15vw;  
+}
+.heropara h2{
+    color: #a5a3a3;
+    font-family: poppins;
+    font-size: 1.2vw;
+    letter-spacing: 0.3vw;
+    margin-bottom: 1vw;
+}
+.heropara p{
+    color: rgb(195, 194, 194);
+    font-family: poppins;
+    font-size: 3vw;
+    text-transform: uppercase;
+    line-height: 3.5vw;
+    font-weight: 900;
+}
+.heropara p span{
+    color:rgb(255, 119, 0) ;
+}
+.skillpage{
+    background-color: #7a7676;
+    padding: 10vw 20vw;
+    background-color: #000000;
+    /* border-top:1px solid rgb(132, 131, 131); */
+}
+.heading h2{
+    text-align: center;
+    font-family: oswald;
+    font-size: 3vw;
+    color: #e6e4e4;
+    margin-bottom: 5vw;
+}
+.skillslogo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.skill-card {
+    position: relative;
+    width: 10vw;
+    height: 10vw;
+    background: linear-gradient(150deg,#140f20,#181818);
+    border-radius: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 2vw;
+    border: 0.1px solid rgb(73, 72, 72);
+}
+.skill-card img {
+    width: 6vw;
+    height: 6vw;
+    border-radius: 1vw;
+    object-fit: cover;
+    object-position: center;
+}
+.skill-name {
+    position: absolute;
+    top: -20px;
+    background-color: #464652;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+.skill-card:hover .skill-name {
+    opacity: 1;
+    transform: translateY(0);
+    font-family: poppins;
+    font-size: 1vw;
+}
