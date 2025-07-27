@@ -1,11 +1,16 @@
 
 
 let tl = gsap.timeline()
-
+tl.from(".container",{
+    opacity:0,
+    duration:0.7,
+    delay:0.2,
+    y:30
+    
+})
 tl.from(".nav h1",{
     opacity:0,
-    duration:0.5,
-    delay:1,
+    duration:0.3,
     y:-100
 })
 tl.from(".linksm a",{
@@ -20,27 +25,27 @@ tl.from(".buttonsl button",{
     duration:0.3,
     stagger:0.3,
     y:-100,
-    ease: "elastic.out(2,0.5)"
+    ease: "elastic.out(2,1)"
 })
 tl.from(".yug",{
     opacity:0,
     duration:0.7,
     y:-200,
     scale:3,
-    ease: "elastic.out(3,1)"  
+    ease: "elastic.out(2,1)"  
 })
 tl.from(".developer",{
     opacity:0,
     duration:0.7,
-    y:200,
-    scale:3,
-    ease: "elastic.out(3,1)"
+    y:4000,
+    scale:1,
+    ease: "power4.out",
 })
 tl.from(".underline",{
     opacity:0,
     duration:0.3,
     y:200,
-    ease: "elastic.out(3,5)"
+    ease: "elastic.out(1,0.5)"
 })
 gsap.from(".heropara h2",{
     opacity:0,
@@ -90,27 +95,42 @@ gsap.from(".headingp h2",{
         trigger:".headingp h2",
         scroller:"body",
         start:"top 90%",
-        end:"top 90%",
+        end:"top 40%",
         scrub:true
     }
 })
-gsap.from(".skill-card",{
-    opacity:0.3,
-    duration:0.3,
-    y:500,
-    scrollTrigger:{
-        trigger:".skill-card",
-        scroller:"body",
-        start:"top 60%",
-        end:"top 30%",
-        scrub:1
-    }
-})
+
 gsap.from(".react",{
     rotate:720,
     duration:10,
     ease:"none",
     repeat:-1
+})
+gsap.from(".skill-card",{
+
+    duration:0.6,
+    y:300,
+    ease: "power1.inOut",
+    scrollTrigger:{
+        trigger:".skill-card",
+        scroller:"body",
+        start:"top 60%",
+        end:"top 30%",
+        scrub:true,
+    }
+})
+gsap.from(".skill-card img",{
+    stagger:0.8,
+    opacity:0,
+    duration:1,
+    x:10,
+        scrollTrigger:{
+        trigger:".skill-card",
+        scroller:"body",
+        start:"top 50%",
+        end:"top 30%",
+        scrub:true,
+    }
 })
 gsap.to(".project1",{
     scale:1.1,
