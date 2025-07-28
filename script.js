@@ -50,25 +50,25 @@ tl.from(".underline",{
 gsap.from(".heropara h2",{
     opacity:0,
     scale:2,
-    duration:2,
-    x:200,
+    duration:1.5,
+    y:200,
     ease: "elastic.out(2,1)",
     scrollTrigger:{
         trigger:".heropara h2",
         scroller:"body",
-        start:"top 70%"
+        start:"top 90%"
     }
 })
 gsap.from(".heropara p",{
     opacity:0,
     duration:1,
-    y:1000,
+    y:100,
     stagger:1,
     ease: "elastic.out(1,3)",
     scrollTrigger:{
         trigger:".heropara h2",
         scroller:"body",
-        start:"top 60%"
+        start:"top 90%"
     }
 })
 gsap.from(".heading h2",{
@@ -108,14 +108,14 @@ gsap.from(".react",{
 })
 gsap.from(".skill-card",{
 
-    duration:0.6,
-    y:300,
+    duration:1,
+    y:200,
     ease: "power1.inOut",
     scrollTrigger:{
         trigger:".skill-card",
         scroller:"body",
-        start:"top 60%",
-        end:"top 30%",
+        start:"top 90%",
+        end:"top 60%",
         scrub:true,
     }
 })
@@ -123,11 +123,11 @@ gsap.from(".skill-card img",{
     stagger:0.8,
     opacity:0,
     duration:1,
-    x:10,
+    x:-10,
         scrollTrigger:{
         trigger:".skill-card",
         scroller:"body",
-        start:"top 50%",
+        start:"top 80%",
         end:"top 30%",
         scrub:true,
     }
@@ -156,12 +156,12 @@ gsap.from(".headingc h3",{
     scale:1,
     duration:0.5,
     ease: "power4.inOut",
-    x: 250,
+    x:-100,
     scrollTrigger:{
         trigger:".headingc h3",
         scroller:"body",
-        start:"top 60%",
-        end:"top 40%",
+        start:"top 67%",
+        end:"top 60%",
         scrub:true
     }
 })
@@ -169,41 +169,41 @@ gsap.from(".headingc h1",{
     opacity:0,
     scale:1,
     duration:0.5,
+    x:100,
     ease: "power4.inOut",
-    x: -250,
     scrollTrigger:{
         trigger:".headingc h1",
         scroller:"body",
-        start:"top 60%",
-        end:"top 40%",
+        start:"top 70%",
+        end:"top 60%",
         scrub:true
     }
 })
 gsap.from(".contactform",{
     opacity:0,
     scale:1,
-    duration:3,
+    duration:2,
     ease: "power4.inOut",
-    x: -150,
+    y:100,
     scrollTrigger:{
         trigger:".contactform",
         scroller:"body",
-        start:"top 60%",
-        end:"top 40%",
+        start:"top 90%", 
+        end:"top 40%" ,
         scrub:true
     }
 })
 gsap.from(".contactlinks",{
     opacity:0,
     scale:1,
-    duration:3,
+    duration:2,
     ease: "power4.inOut",
-    x: 150,
+    y:100,
     scrollTrigger:{
         trigger:".contactlinks",
         scroller:"body",
-        start:"top 60%",
-        end:"top 40%",
+        start:"top 90%", 
+        end:"top 70%" ,
         scrub:true
     }
 })
@@ -213,7 +213,7 @@ gsap.from(".contactlinks",{
 
 
 
-particlesJS("particles-js", {"particles":{"number":{"value":185,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":3},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.665416005259192,"random":true,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3.9,"random":true,"anim":{"enable":false,"speed":100.69930069930071,"size_min":48.75124875124875,"sync":true}},"line_linked":{"enable":false,"distance":929.9789953020032,"color":"#ffffff","opacity":0.5291259800856225,"width":6.0929658312889865},"move":{"enable":true,"speed":5,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+particlesJS("particles-js", {"particles":{"number":{"value":185,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":3},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.665416005259192,"random":true,"anim":{"enable":false,"speed":10,"opacity_min":0.1,"sync":false}},"size":{"value":3.9,"random":true,"anim":{"enable":false,"speed":100.69930069930071,"size_min":48.75124875124875,"sync":true}},"line_linked":{"enable":false,"distance":929.9789953020032,"color":"#ffffff","opacity":0.5291259800856225,"width":6.0929658312889865},"move":{"enable":true,"speed":5,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
 
 
 
